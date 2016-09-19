@@ -1,6 +1,6 @@
 #!/usr/bin/python
 ""
-Script to extract esxhosts on vcenter cpu usage for last 1 hour with multithread
+Script to extract cpu usage of esxhosts on vcenter for last 1 hour with multithreading
 ""
 import atexit
 from pyVmomi import vim
