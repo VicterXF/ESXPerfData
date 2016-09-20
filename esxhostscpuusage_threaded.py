@@ -1,5 +1,8 @@
 #!/usr/bin/python
 ""
+Written by Gaurav Dogra
+Github: https://github.com/dograga
+
 Script to extract cpu usage of esxhosts on vcenter for last 1 hour with multithreading
 ""
 import atexit
@@ -50,9 +53,7 @@ class perfdata():
               output.append(perfinfo)
               count+=1
           for out in output:
-              print out['hostname']
-              print out['timestamp']
-              print out['value']
+	      print "Hostname: {}  TimeStame: {} Usage: {}".format (out['hostname'],out['timestamp'],out['value'])
        except vmodl.MethodFault as e:
            print("Caught vmodl fault : " + e.msg)
            return 0
