@@ -8,7 +8,6 @@ Script to extract vm performance data
 import atexit
 from pyVmomi import vim
 from pyVim.connect import SmartConnect, Disconnect
-import ecsdbs
 import time
 import datetime
 from pyVmomi import vmodl
